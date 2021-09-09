@@ -19,6 +19,7 @@ jobs:
         python-version: 3.7
     - name: Generate coverage report
       run: |
+        pip install pytest
         pip install coverage
         coverage run -m pytest
     - name: Upload coverage repot to codecov.io
